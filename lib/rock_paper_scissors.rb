@@ -11,15 +11,15 @@ puts "\n\nHello and welcome to the Hunger Games, where losing is a big deal!"
 #   players if they know the rules of the game, using gets.chomp.
 # This is steps 2 & 3. Done!
 
-puts "\n\nSo, you there. What's your name? "
+puts "\n\nSo, you there. What's your name? \n\n"
 p1_name = gets.chomp
-puts "Thanks, #{p1_name}!"
-puts "\n\nNow, what's your name? "
+puts "\n\nThanks, #{p1_name}!"
+puts "\n\nNow, what's your name? \n\n"
 p2_name = gets.chomp
-puts "Thank you, #{p2_name}!"
-puts "\n\n\n#{p1_name}, do you know the rules of rock, paper, scissors? "
+puts "\n\nThank you, #{p2_name}!\n\n"
+puts "\n\n#{p1_name}, do you know the rules of rock, paper, scissors? \n\n"
 p1_answer_1 = gets.chomp
-puts "\n\n#{p2_name}, how about you? "
+puts "\n\n#{p2_name}, how about you? \n\n"
 p2_answer_1 = gets.chomp
 
 ##############################################################
@@ -48,13 +48,13 @@ end
 #   the rules.
 
 if p1_answer_1 == "yes" && p2_answer_1 == "yes"
-  puts "\nGreat! Let's get started!"
+  puts "\n\nGreat! Let's get started!\n\n"
 elsif p1_answer_1 == "no" && p2_answer_1 == "yes"
-  puts "\nOk #{p1_name}, looks like someone took the short bus to school. Here are the rules. #{rules}"
+  puts "\n\nOk #{p1_name}, looks like someone took the short bus to school. Here are the rules. #{rules}\n\n"
 elsif p1_answer_1 == "no" && p2_answer_1 == "no"
-  puts "\nSeriously? Neither of you know? #{p1_name} and #{p2_name}, you two have got to be... Nevermind. Here are the rules. Idiots. #{rules}"
+  puts "\n\nSeriously? Neither of you know? #{p1_name} and #{p2_name}, you two have got to be... Nevermind. Here are the rules. Idiots. #{rules}\n\n"
 elsif p1_answer_1 == "yes" && p2_answer_1 == "no"
-  puts "\nReally, #{p2_name}? You, my friend, led a deprived childhood. Oh well, here are the rules. #{rules}"
+  puts "\n\nReally, #{p2_name}? You, my friend, led a deprived childhood. Oh well, here are the rules. #{rules}\n\n"
 end
 
 
@@ -63,9 +63,9 @@ end
 
 # We ask player for their move and get their input (5, 6)
 
-puts "\n\n\n#{p1_name}, we'll start with you. Which would you like to choose? "
+puts "\n\n\n#{p1_name}, we'll start with you. Which would you like to choose? \n\n"
 p1_move = gets.chomp
-puts "\n\n#{p2_name}, it's your turn. Which would you like to choose? "
+puts "\n\n#{p2_name}, it's your turn. Which would you like to choose? \n\n"
 p2_move = gets.chomp
 puts "#{p1_move}, #{p2_move}"
 
@@ -75,29 +75,29 @@ puts "#{p1_move}, #{p2_move}"
 #   rock, paper, scissors. These are: win, lose, or tie.
 
 if    p1_move == "rock"     && p2_move == "scissors"
-  puts result = "Player one wins!"
+  puts result = "\n\nPlayer one wins!\n\n"
 elsif p1_move == "rock"     && p2_move == "paper"
-  puts result = "Player two wins!"
+  puts result = "\n\nPlayer two wins!\n\n"
 elsif p1_move == "rock"     && p2_move == "rock"
-  puts result = "Oh snap, that's a tie. Try again!"
+  puts result = "\n\nOh snap, that's a tie. Try again!\n\n"
 elsif p1_move == "scissors" && p2_move == "rock"
-  puts "Player two wins!"
+  puts "\n\nPlayer two wins!\n\n"
 elsif p1_move == "scissors" && p2_move == "paper"
-  puts "Player one wins"
+  puts "\n\nPlayer one wins\n\n"
 elsif p1_move == "scissors" && p2_move == "scissors"
-  puts "Oh snap, that's a tie. Try again!"
+  puts "\n\nOh snap, that's a tie. Try again!\n\n"
 elsif p1_move == "paper"    && p2_move == "rock"
-  puts "Player one wins!"
+  puts "\n\nPlayer one wins!\n\n"
 elsif p1_move == "paper"    && p2_move == "scissors"
-  puts "Player two wins!"
+  puts "\n\nPlayer two wins!\n\n"
 elsif p1_move == "paper"    && p2_move == "paper"
-  puts "Oh snap, that's a tie. Try again!"
+  puts "\n\nOh snap, that's a tie. Try again!\n\n"
 elsif result == "Player one wins!"
-  puts "Congratulations #{p1_name}!"
+  puts "\n\nCongratulations #{p1_name}!\n\n"
 elsif result == "Player two wins!"
-  puts "Congratulations #{p2_name}!"
+  puts "\n\nCongratulations #{p2_name}!\n\n"
 elsif result == "Oh snap, that's a tie. Try again!"
-  puts "Oh snap, that's a tie. Try again!"
+  puts "\n\nOh snap, that's a tie. Try again!\n\n"
 end
 
 
